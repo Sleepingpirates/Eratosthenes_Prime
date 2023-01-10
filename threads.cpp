@@ -66,13 +66,13 @@ int main() {
 
     //The following lines of code are used to calculate the results and write to a file called 'primes.txt'.
     int num_primes = primes.size();
-    unsigned int sum_primes = accumulate(primes.begin(), primes.end(), 0);
+    unsigned long long sum_primes = accumulate(primes.begin(), primes.end(), 0LL);
 
     ofstream output_file("primes.txt");
     output_file << execution_time << "ms " << num_primes << " " << sum_primes << '\n';
     sort(primes.begin(),primes.end());
     int n = primes.size();
-    for(int i = n-1; i>n-11;i--)
+    for(int i = n-10; i<n;i++)
     output_file << primes[i] << " ";
     output_file.close();
     return 0;
