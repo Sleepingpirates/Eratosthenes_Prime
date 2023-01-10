@@ -4,7 +4,6 @@
 #include <numeric>
 #include <chrono>
 #include <fstream>
-#include <algorithm>
 #include <thread>
 using namespace std;
 
